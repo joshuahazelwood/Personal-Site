@@ -1,36 +1,29 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {AppRoutingModule} from "./app-routing.module";
-import {HomeModule} from "./home/home.module";
-import {NavigationBarModuleModule} from "./navigation-bar/navigation-bar.module";
-import {AboutModule} from "./about/about.module";
-
+import { NavigationBarComponent } from './navigation-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    HomeModule,
-    NavigationBarModuleModule,
-    AboutModule
   ],
   providers: [
   ],
-  exports: [],
-  bootstrap: [AppComponent]
+  exports: [
+    NavigationBarComponent
+  ],
+  bootstrap: [NavigationBarComponent]
 })
-export class AppModule {
+export class NavigationBarModuleModule {
 }

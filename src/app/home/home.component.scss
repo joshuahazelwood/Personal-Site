@@ -1,16 +1,16 @@
 :host {
   height: 100vh;
 
-  .background {
-    width: 100vw;
-    height: 100vh;
-    background: repeating-linear-gradient(
-        to bottom,
-        #201f0f,
-        #6f8aa5 50%,
-        #201f0f 100%
-    );
-    background-size: 100% 40px; /* Control stripe height */
-    transition: background-position 0.2s ease-in-out; /* Smooth animation */
-  }
+  //.background {
+  //  width: 100vw;
+  //  height: 100vh;
+  //  background: repeating-linear-gradient(
+  //      to bottom,
+  //      #201f0f,
+  //      #6f8aa5 50%,
+  //      #201f0f 100%
+  //  );
+  //  background-size: 100% 40px; /* Control stripe height */
+  //  transition: background-position 0.2s ease-in-out; /* Smooth animation */
+  //}
 }
