@@ -4,12 +4,11 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HomeComponent} from "./home.component";
-import {OldComputerModule} from "../old-computer/old-computer.module";
+import {OldComputerComponent} from "./old-computer.component";
 
 @NgModule({
   declarations: [
-    HomeComponent
+    OldComputerComponent
   ],
   imports: [
     BrowserModule,
@@ -18,13 +17,13 @@ import {OldComputerModule} from "../old-computer/old-computer.module";
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    OldComputerModule,
-
   ],
   providers: [
   ],
-  exports: [],
-  bootstrap: [HomeComponent]
+  exports: [
+    OldComputerComponent
+  ],
+  bootstrap: [OldComputerComponent]
 })
-export class HomeModule {
+export class OldComputerModule {
 }
