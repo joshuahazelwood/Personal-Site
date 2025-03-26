@@ -9,6 +9,8 @@ import {AppRoutingModule} from "./app-routing.module";
 import {HomeModule} from "./home/home.module";
 import {NavigationBarModuleModule} from "./navigation-bar/navigation-bar.module";
 import {AboutModule} from "./about/about.module";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {ProjectsModule} from "./projects/projects.module";
 
 
 @NgModule({
@@ -25,9 +27,12 @@ import {AboutModule} from "./about/about.module";
     BrowserAnimationsModule,
     HomeModule,
     NavigationBarModuleModule,
-    AboutModule
+    AboutModule,
+    ProjectsModule
   ],
   providers: [
+
+    provideAnimationsAsync()
   ],
   exports: [],
   bootstrap: [AppComponent]

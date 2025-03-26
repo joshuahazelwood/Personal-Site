@@ -21,6 +21,9 @@ export class NavigationBarComponent {
       case 'home':
         this.router.navigate(['/home']);
         break;
+      case 'projects':
+        this.router.navigate(['/projects']);
+        break;
     }
   }
 }
